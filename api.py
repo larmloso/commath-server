@@ -31,6 +31,10 @@ class rootFinding(BaseModel):
 
 app = FastAPI() # FlaskApp()
 
+@app.get('/')
+def home():
+    return "hello"
+
 #broker_cfg = {'AMQP_URI': "amqp://guest:guest@rabbitmq"}
 origins = [
     "*",
