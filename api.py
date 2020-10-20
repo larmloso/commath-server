@@ -33,7 +33,7 @@ app = FastAPI() # FlaskApp()
 
 @app.get('/')
 def home():
-    return "hello"
+    return {"data": "hello World"}
 
 #broker_cfg = {'AMQP_URI': "amqp://guest:guest@rabbitmq"}
 origins = [
